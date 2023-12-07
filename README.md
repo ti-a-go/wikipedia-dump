@@ -1,23 +1,12 @@
 # wikipedia-dump
+
 Extracts text data from wikipedia dumps.
 
 
 
 # Dependencies
 
-## Spacy
-
-[Official Website](https://spacy.io/)
-
-OBS: In the future we plan to use other libraries as Gensim, Stanza and NLTK to mention a few.
-
-### Download Language Models
-
-```shell
-pip install -U pip setuptools wheel
-pip install -U spacy
-python -m spacy download pt_core_news_lg
-```
+[Wikiextractor](https://github.com/attardi/wikiextractor)
 
 
 
@@ -71,6 +60,8 @@ The latest dump can be found in the file:
 The articles index can be found in the index file: 
 [ptwiki-latest-pages-articles-multistream-index.txt](./data/ptwiki-20231020-pages-articles-multistream-index.txt)
 
+
+
 # How to get only the __text__ data from the XML dump file?
 
 Wikipedia allow us to download all articles data, but it's in XML format.
@@ -85,11 +76,12 @@ The XML file is more the 9GB large, so it's necessary to find a way to open it w
  data/ptwiki-latest-pages-articles-multistream.xml.bz2
 ```
 
-### GitHub repo where I have found Wikiextractor
+## GitHub repo where I have found Wikiextractor
 
 pt-BR Corpus with the Wikipedia dump.
 
 [PT BR Corpus](https://github.com/eberlitz/pt-br-corpus).
+
 
 
 # Alternative Strategy
